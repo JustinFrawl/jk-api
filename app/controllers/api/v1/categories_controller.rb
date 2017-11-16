@@ -20,7 +20,7 @@ class Api::V1::CategoriesController < ApplicationController
 
   private
   def category_params
-    params.permit(:name, :posts)
+    params.permit(:name, :posts, :comments)
   end
 
 
