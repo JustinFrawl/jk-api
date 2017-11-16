@@ -16,6 +16,7 @@ class Api::V1::CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     @category.save
+    render json: @category
   end
 
   private
